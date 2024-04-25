@@ -1,0 +1,63 @@
+# Departments and sub-departments
+[{
+    "_id":"dep001",
+    "dep_name":"BI",
+    "parent_dep":[],
+    "child_dep":["dep002","dep003"]
+},
+{
+    "_id":"dep002",
+    "dep_name":"Finance Cluster",
+    "parent_dep":["dep001"],
+    "child_dep":[]
+},
+{
+    "_id":"dep003",
+    "dep_name":"Web Apps Cluster",
+    "parent_dep":["dep001"],
+    "child_dep":[]
+},
+]
+
+# Job positions
+[{
+    "_id":"jb001",
+    "dep_name":"dep003",
+    "jb_name":"Supervisor",
+    "child_jb":["jb002"]
+    "parent_jb":[]
+},
+{
+    "_id":"jb002",
+    "dep_name":"dep003",
+    "jb_name":"BI Analyst",
+    "child_jb":[]
+    "parent_jb":["jb001"]
+},
+{
+    "_id":"jb003",
+    "dep_name":"dep003",
+    "jb_name":"BI Head",
+    "child_jb":["jb001","jb002"]
+    "parent_jb":[]
+},
+] 
+
+# Employees
+[{
+    "_id":"emp001",
+    "name":"Ernesto"
+    "dep_name":"dep003",
+    "salary":27000,
+    "work_type":"full"
+    "position":"jb002"
+},
+{
+    "_id":"emp002",
+    "name":"Daniel"
+    "dep_name":"dep003",
+    "salary":35000,
+    "work_type":"full",
+    "position":"jb002"
+}
+] 

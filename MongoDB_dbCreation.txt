@@ -1,0 +1,35 @@
+MongoDB
+-> Create db
+use productCatalogDB
+
+-> Create collection in the database
+db.createCollection("catalog")
+
+-> Show collections
+show collections
+
+-> Insert data
+db.catalog.insert({
+  "_id":"clog1",
+  "name":"product catalog"
+})
+
+-> Insert multiple data
+db.category.insert([
+{
+  "category_name":"Apple Products",
+  "child_categories":[],
+  "parent_categories":[],
+},
+{
+  "category_name":"Apple Phones",
+  "child_categories":[],
+  "parent_categories":["ct001","ct002"],
+}])
+
+-> Count Documents
+db.category.countDocuments()
+
+-> Find document (if all of them leave () empty)
+db.category.find({category_name:"Apple Products"})
+

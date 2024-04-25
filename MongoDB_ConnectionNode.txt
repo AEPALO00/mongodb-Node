@@ -1,0 +1,23 @@
+a01570541
+MjIwNzgtYTAxNTcw
+
+-> Create project
+
+-> Install mongoose
+
+-> file.js : schema
+-- import mongoose
+-- create instance of schema
+-- create new schema for model
+-- create mongoose.model("name", schema)
+
+-> app.js 
+-- import mongoose
+-- import file.js (step 1)
+-- define url with password
+-- create connection connect(url, {db:dbName})
+-- retrive data from the model.find()
+-- .then() to process data and close connection
+
+
+
